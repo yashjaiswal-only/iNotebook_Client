@@ -1,0 +1,9 @@
+<Router>    -must be all outside
+<Routes>
+<Route path="" element={} />
+
+context is a type of global state (no need to propogate props which increases error probab)
+
+using font awesome 
+
+npm i cors - to make request of api from browser
