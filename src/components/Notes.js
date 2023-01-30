@@ -125,7 +125,7 @@ const Notes = (props) => {
       </div>
 
       <div className="row my-4">
-        <h1>Your notes</h1>
+        <h1 style={{color:'white'}}>Your notes</h1>
         <div className="container">{notes.length===0 && "No Notes to display"}</div>
         
         {notes.map((note) => {

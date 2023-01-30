@@ -18,7 +18,7 @@ const Addnote = (props) => {
     }
 
   return (
-    <div className="container my-3">
+    <div className="container my-3" style={{color:'white'}}>
       <h1>Add a note</h1>
       <form>
         <div className="mb-3">
@@ -29,8 +29,9 @@ const Addnote = (props) => {
             className="form-control"    type="text" value={note.tittle}
             id="tittle" name="tittle"
             aria-describedby="emailHelp" onChange={onChange}
+            style={{backgroundColor:'#d0ebcc'}}
           />
-          <div id="emailHelp" className="form-text">
+          <div id="emailHelp" className="form-text" style={{color:'white'}}>
             We'll never share your Notes with anyone else.
           </div>
         </div>
@@ -41,7 +42,7 @@ const Addnote = (props) => {
           <input
             type="text" value={note.description}
             className="form-control"
-            id="description"    name="description"  onChange={onChange}
+            id="description"    name="description"  onChange={onChange} style={{backgroundColor:'#d0ebcc'}}
           />
         </div>
         <div className="mb-3">
@@ -51,7 +52,7 @@ const Addnote = (props) => {
           <input
             type="text" value={note.tag}
             className="form-control"
-            id="tag"    name="tag"  onChange={onChange}
+            id="tag"    name="tag"  onChange={onChange} style={{backgroundColor:'#d0ebcc'}}
           />
         </div>
        

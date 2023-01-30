@@ -32,7 +32,7 @@ const Login = (props) => {
     }
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} style={{color:'white', marginTop:'10px'}}>
         <div className="mb-3">
           <label htmlFor="email" className="form-label">
             Email address
@@ -43,7 +43,7 @@ const Login = (props) => {
             id="email" name="email"
             aria-describedby="emailHelp"
           />
-          <div id="emailHelp" className="form-text">
+          <div id="emailHelp" className="form-text" style={{color:'white', marginTop:'10px'}}>
             We'll never share your email with anyone else.
           </div>
         </div>

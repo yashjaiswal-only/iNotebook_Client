@@ -12,10 +12,10 @@ const Navbar = () => {
     // navigate('/login') //to atribute does work
   }
   return (
-    <nav className="navbar navbar-expand-lg bg-light">
+    <nav className="navbar navbar-expand-lg bg-dark" style={{color:'white',backgroundColor:"aqua"}}>
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          Navbar
+        <Link className="navbar-brand" to="/" style={{color:'white'}}>
+          iNotebook
         </Link>
         <button
           className="navbar-toggler"
@@ -37,18 +37,9 @@ const Navbar = () => {
                 }`}
                 aria-current="page"
                 to="/"
+                style={{color:'white'}}
               >
                 Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className={`nav-link ${
-                  location.pathname === "/about" ? "active" : ""
-                }`}
-                to="/about"
-              >
-                About
               </Link>
             </li>
           </ul>

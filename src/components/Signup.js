@@ -28,7 +28,7 @@ const Signup = (props) => {
     }
   return (
     <div>
-     <form onSubmit={handleSubmit}>
+     <form onSubmit={handleSubmit} style={{color:'white', marginTop:'10px'}}>
         <div className="mb-3">
             <label htmlFor="name" className="form-label">Name</label>
             <input  className="form-control" value={credentials.name} onChange={onChange} id="name" name='name' />
